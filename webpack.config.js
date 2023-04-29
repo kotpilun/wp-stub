@@ -55,7 +55,6 @@ module.exports = {
 
   module: {
     rules: [
-
       {
         test: /\.(png|jpe?g|gif)$/i,
         type: 'asset/resource', 
@@ -65,7 +64,7 @@ module.exports = {
         use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
       },
       {
-        test: /\.tsx&$/,
+        test: /\.tsx?$/,
         use: 'ts-loader',
         exclude: /node_modules/,
       },
