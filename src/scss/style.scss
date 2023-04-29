@@ -1,0 +1,59 @@
+@import './_reset';
+
+html, body {
+  font: 16px/1.4 Georgia, serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+button {
+  font-size: 16px;
+  padding: 0;
+  border: none;
+}
+
+.container {
+  max-width: 400px;
+  padding: 2rem;
+  margin: 0 auto;
+  text-align: center;
+  user-select: none;
+}
+
+.board {
+  width: 100%;
+  padding-bottom: 100%;
+  background-color: rgb(159, 199, 201);
+  font-size: 0;
+  margin-bottom: 1rem;
+  position: relative;
+
+  .item {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 25%;
+    height: 25%;
+    background: #7e7979;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+  .item:hover {
+    background: #353434;
+  }
+}
+
+.refresh {
+  width: 10rem;
+  padding: 7px;
+  background: #7e7979;
+  color: #fff;
+  cursor: pointer;
+}
+
+.refresh:hover {
+  background: #353434;
+}
