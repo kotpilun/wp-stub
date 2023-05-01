@@ -22,15 +22,15 @@ const optimization = () => {
 }
 
 module.exports = {
+  devtool: 'eval-source-map',
+  
   context: path.resolve(__dirname, 'src'),
   mode: 'development',
-  devtool:'inline-source-map',
 
   entry: {
     main: path.join(__dirname,'src','index.ts')
   },
 
-  devtool: 'inline-source-map',
 
   output: {
     path: path.resolve(__dirname, 'dist'),
